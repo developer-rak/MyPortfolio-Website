@@ -1006,3 +1006,121 @@ footer .copyright-text
     font-weight: 300;
     margin: 10px 0 0;
 }
+/*Responsive*/
+@media  (min-width:1300px) and (max-width:1399px)
+{
+    .header-social
+    {
+        left: 10px;
+    }
+}
+@media  (max-width:1300px)
+{
+    .header-social
+    {
+        display: none;
+    }
+}
+@media(max-width: 991px)
+{
+    .navbar .menu
+    {
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: var(--main-color);
+        width: 100%;
+        text-align: center;
+        transition: all 0.5s ease;
+        box-shadow: 0 10px 27px rgba(0,0,0,.05);
+    }
+    .navbar .menu.active 
+    {
+        left: 0;
+    }
+    .navbar.sticky .menu
+    {
+        background-color: var(--white);
+        top: 65px;
+    }
+    .navbar .menu .nav-item
+    {
+        display: block;
+        margin: 6px 0;
+    }
+    .navbar.sticky .menu .nav-item .nav-link
+    {
+        color: var(--main-color);
+    }
+    .navbar .nav-item .nav-link span 
+    {
+        display: none;
+    }
+    .navbar .menu-btn
+    {
+        display: block;
+        z-index: 999;
+    }
+    .header-social
+    {
+        display: block;
+        left: 90%;
+    }
+    .header-hero-shape
+    {
+        display: none;
+    }
+    .home-section .home-image,
+    .home-section .home-text
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .home-section .home-image
+    {
+        display: flex;
+        justify-content: center;
+    }
+    .home-image .img-box
+    {
+        margin-top: 30px;
+    }
+    .about-section .about-image
+    {
+        display: none;
+    }
+    .about-section .about-content
+    {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+    .about-section .about-content .section-title
+    {
+        text-align: center;
+    }
+    .pricing .pricing-item,
+    .portfolio .portfolio-item,
+    .service-section .service-item
+    {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media(max-width: 767px)
+{
+    .header-social
+    {
+        left: 85%;
+    }
+    .service-section .service-item,
+    .portfolio .portfolio-item,
+    .pricing .pricing-item,
+    .contact-section .contact-item,
+    .contact-section .w-50,
+    .about-section .about-content
+    {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
