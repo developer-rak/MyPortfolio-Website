@@ -993,3 +993,16 @@ img
     text-align: right;
     padding: 0 15px;
 }
+/*footer*/
+footer
+{
+    background-color: var(--main-color);
+}
+footer .copyright-text
+{
+    padding: 10px 0;
+    font-size: 18px;
+    color: var(--black-100);
+    font-weight: 300;
+    margin: 10px 0 0;
+}
