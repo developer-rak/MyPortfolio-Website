@@ -1,2 +1,153 @@
 /*===== Google Fonts =====*/
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+/* Color Code
+EB9C0A
+#00a78e
+*/
+/*===== Global CSS =====*/
+html
+{
+    scroll-behavior: smooth;
+}
+:root
+{
+    --main-color:#EB9C0A;
+    --shadow-black-100:0 5px 15px rgba(0,0,0,0.2);
+    --black-900:#000;
+    --black-400:#646f87;
+    --black-100:#f7f7f7;
+    --white:#fff;
+    --black-alpha-100:rgba(0,0,0,.05);
+}
+body
+{
+    font-family: "Kaushan Script", cursive;
+    font-size: 16px;
+    font-weight: normal;
+    overflow-x: hidden;
+    background-color: var(--white);
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+ul
+{
+    list-style: none;
+}
+img
+{
+    vertical-align: middle;
+}
+.container
+{
+    max-width: 1140px;
+    margin: auto;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.justify-content-center
+{
+    justify-content: center;
+}
+.justify-content-between
+{
+    justify-content: space-between;
+}
+.align-items-center
+{
+    align-items: center;
+}
+.btn-1
+{
+    background-color: var(--main-color);
+    padding: 15px 40px;
+    border: none;
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    transition: all 0.3s ease-out;
+}
+.btn-1:hover
+{
+    color: var(--white);
+    background-color: rgba(0,167,142,0.7);
+}
+
+.btn-2
+{
+    background-color: var(--white);
+    padding: 15px 40px;
+    border: none;
+    color: var(--main-color);
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: capitalize;
+    font-weight: 600;
+    border: 1px solid var(--main-color);
+    transition: all 0.3s ease-out;
+}
+.btn-2:hover
+{
+    color: var(--white);
+    background-color: var(--main-color);
+    border: none;
+}
+.section-padding
+{
+    padding: 80px 0;
+}
+.text-align
+{
+    text-align: center;
+}
+.section-title
+{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 30px;
+}
+.section-title .sub-title
+{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--main-color);
+}
+.section-title .main-title
+{
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.section-title .line 
+{
+    padding-top: 0px;
+}
+.section-title .line li
+{
+    display: inline-block;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    height: 3px;
+}
+.section-title .line li:nth-of-type(1)
+{
+    width: 64px;
+}
+.section-title .line li:nth-of-type(2)
+{
+    width: 10px;
+}
+.section-title .line li:nth-of-type(3)
+{
+    width: 7px;
+}
