@@ -1005,9 +1005,10 @@ footer .copyright-text
 {
     padding: 10px 0;
     font-size: 18px;
-    color: var(--black-100);
-    font-weight: 300;
+    color: var(--black-900);
+    font-weight: 600;
     margin: 10px 0 0;
+    letter-spacing: 3px;
 }
 /*Responsive*/
 @media  (min-width:1300px) and (max-width:1399px)
