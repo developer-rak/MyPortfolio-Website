@@ -4,6 +4,7 @@ var navbar = document.querySelector(".navbar");
 window.onscroll = () => {
     this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
 }
+
 /*===== Nav Toggler =====*/
 const navMenu = document.querySelector(".menu");
 navToggle = document.querySelector(".menu-btn");
@@ -37,6 +38,7 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
 /*===== Skills Animation =====*/
 const skills_wrap = document.querySelector(".about-skills"),
     skills_bar = document.querySelectorAll(".progress-line");
@@ -57,6 +59,7 @@ function skillsEffect() {
     if (!checkScroll(skills_wrap)) return;
     skills_bar.forEach((skill) => (skill.style.width = skill.dataset.progress));
 }
+
 /*===== Portfolio Item Filter =====*/
 const FilterContainer = document.querySelector(".portfolio-filter"),
     filterBtns = FilterContainer.children;
@@ -84,6 +87,7 @@ for (let i = 0; i < totalFilterBtn; i++) {
         }
     })
 }
+
 /*===== Lightbox =====*/
 const lightbox = document.querySelector(".lightbox"),
     lightboxImg = lightbox.querySelector(".lightbox-img"),
