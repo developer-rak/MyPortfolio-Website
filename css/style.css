@@ -701,6 +701,24 @@ img
 {
     line-height: 40px;
 }
+
+.portfolio .more-btn {
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    margin-top: 30px;
+    height: auto;
+    width: 100%;
+}
+
+.portfolio .more-btn .btn {
+    text-align: center;
+    display: inline-block;
+    justify-content: center;
+    width: 97%;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
 /*===== Lightbox =====*/
 .lightbox
 {
@@ -1144,5 +1162,15 @@ footer p a {
     {
         flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .portfolio .more-btn .btn {
+        text-align: center;
+        display: inline-block;
+        justify-content: center;
+        width: 92%;
+        font-size: 20px;
+        letter-spacing: 3px;
+        
     }
 }
